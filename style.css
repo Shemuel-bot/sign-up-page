@@ -5,16 +5,28 @@ body{
 form{
     background-color: aqua;
     display: flex;
-    flex-wrap: wrap;
-    width: 40vw;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 68vw;
+    height: 30vh; 
+}
+button{
+
 }
 fieldset{
     display: flex;
+    justify-content: flex-start;
 }
 #leaves-image{
     width: 30vw;
     height: 100vh;
 }
-#left-side{
+#right-side{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
 }
+
