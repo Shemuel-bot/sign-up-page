@@ -1,6 +1,25 @@
+:root{
+    --left-side-size:35vw;
+}
+
 body{
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.behind{
+    position: fixed;
+    margin-top: 9rem;
+    width: var(--left-side-size);
+    height: 16rem;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.odin-logo{
+    position: fixed;
+    width: 11rem;
+    height: 15rem;
+    margin-left: 15rem;
+    margin-top: 10rem;
+    top: 0;
 }
 label{
     font-size: 10px;
@@ -14,10 +33,10 @@ form{
     background-color: rgb(250, 250, 250);
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 64vw;
-    height: 30vh; 
+    height: 35vh; 
     margin-top: 50px;
     gap: 18px;
     box-shadow: 5px 8px 10px rgba(177, 177, 177, 0.349);
@@ -46,18 +65,28 @@ border-style: none;
 border-radius: 8px;
 box-shadow: 0px 7px 10px rgba(161, 161, 161, 0.664);
 }
+input{
+     border-style: none;
+     height: 22px;
+     border-radius: 4px;
+     background-color: aliceblue;
+     box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.452);
+    }
+input:invalid{border-color: red;}
 .name-input{
     display: flex;
     flex-direction: column;
+    
 }
 fieldset{
     display: flex;
     justify-content: flex-start;
     border-style: none;
     gap: 50px;
+    
 }
-#leaves-image{
-    width: 35vw;
+.leaves-image{
+    width: var(--left-side-size);
     height: 100vh;
 }
 #right-side{
@@ -69,7 +98,6 @@ fieldset{
     height: 100vh;
 }
 .text-container{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
     font-size: 23px;
     width: 50rem;
@@ -77,6 +105,10 @@ fieldset{
     margin-top: 5rem;
     margin-bottom: 20px;
     
+}
+form > div >p{
+    font-weight: 800;
+    font-size: 23px;
 }
 .top-form-container{
     display: flex;
