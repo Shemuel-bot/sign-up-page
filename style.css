@@ -78,13 +78,14 @@ box-shadow: 0px 7px 10px rgba(161, 161, 161, 0.664);
 }
 input{
      height: 22px;
-     border-style: solid;
+     border-width: 1px;
+     border-style: dashed;
      border-radius: 4px;
      background-color: aliceblue;
      box-shadow: 0px 5px 10px rgba(190, 190, 190, 0.452);
     }
-input:invalid{border-color: red;}
-input:valid{border-color: rgb(206, 247, 233);}
+input[class='error']:invalid{border-color: red;}
+input[class='error']:valid{border-color: rgb(206, 247, 233);}
 .name-input{
     display: flex;
     flex-direction: column;
