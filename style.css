@@ -1,24 +1,34 @@
 :root{
     --left-side-size:35vw;
 }
-
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+}
 body{
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.odin-text{
+    font-family: odin-font, sans-serif;
+    color: aliceblue;
+    font-size: 125px;
+}
 .behind{
-    position: fixed;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
     margin-top: 9rem;
     width: var(--left-side-size);
     height: 16rem;
     background-color: rgba(0, 0, 0, 0.486);
 }
 .odin-logo{
-    position: fixed;
-    width: 11rem;
-    height: 15rem;
-    margin-left: 15rem;
-    margin-top: 10rem;
+   
+    width: 10rem;
+    height: 13rem;
+
     top: 0;
 }
 label{
@@ -87,7 +97,7 @@ fieldset{
 }
 .leaves-image{
     width: var(--left-side-size);
-    height: 100vh;
+    height: 99vh;
 }
 #right-side{
     display: flex;
