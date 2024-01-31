@@ -23,7 +23,7 @@
         </div>
 
                  
-    <form action="example" method="post">
+    <form action="#" method="get">
         <div class="top-form-container"> 
             <p>Lets do this!</p>
         
@@ -31,39 +31,40 @@
            
             <div class="name-input">
         <label for="first-name">FIRST NAME</label>
-        <input type="text" id="first-name" placeholder="bob">
+        <input type="text" name="first-name" id="first-name" placeholder="bob">
         </div>
         <div class="name-input">
         <label for="last-name">LAST NAME</label>
-        <input type="text" id="last-name" placeholder="bob"></div>
+        <input type="text" name="last-name" id="last-name" placeholder="bob"></div>
         </fieldset>
 
         <fieldset>
             <div class="name-input">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email" placeholder="name@example.com"></div>
+        <label for="email">EMAIL*</label>
+        <input type="email" name="email" id="email" placeholder="name@example.com" required></div>
         
         <div class="name-input">
-        <label for="phone">PHONE NUMBER</label>
-        <input type="number" id="phone" placeholder="123-456-78910" ></div>
+        <label for="phone">PHONE NUMBER*</label>
+        <input type="tel" name="phone" id="phone" placeholder="123-456-78910" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></div>
         </fieldset>
 
         <fieldset>
             <div class="name-input">
-        <label for="pass-word">PASSWORD</label>
-        <input type="password" id="pass-word" class="error" placeholder="example#123" ></div>
+        <label for="pass-word">PASSWORD*</label>
+        <input type="password" name="pass-word" id="pass-word" class="error" placeholder="example#123" required></div>
 
         <div class="name-input">
-        <label for="confirm-pass-word">CONFIRM PASSWORD</label>   
-        <input type="password" id="confirm-pass-word" class="error" placeholder="example#123"></div> 
+        <label for="confirm-pass-word">CONFIRM PASSWORD*</label>   
+        <input type="password" name="confirm-pass-word" id="confirm-pass-word" class="error" placeholder="example#123" required></div> 
         </fieldset>
-        
+        <div class="button-log-in">
+            <button type="submit" >Create Acount</button>
+            <p>Already have an acount?<a href="">Log in</a></p>
+            </div>
         </div>
+        
     </form>
-    <div class="button-log-in">
-    <button type="submit">Create Acount</button>
-    <p>Already have an acount?<a href="">Log in</a></p>
-    </div>
+    
      
     </div>
 </body>
